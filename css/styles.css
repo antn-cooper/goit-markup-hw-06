@@ -3,16 +3,59 @@ body {
   font-weight: 400;
   color: #434455;
   background-color: #fff;
+  margin: 0;
 }
 
 /* Global list reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
-  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none ;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+
+
+/* Navigation layout */
+header > .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header{
+  background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;  
+}
+.header-nav{
+  flex-grow:1;
 }
 
 /* Unbehaving logo */
 .logo {
-  display: inline;
+  /* display: inline-flex;
+  align-items: baseline;
+  gap:20px; */
   text-decoration: none;
 }
 .logo:hover,
@@ -39,6 +82,13 @@ ul {
 }
 
 /* Navigation link styles */
+.header-nav-list{
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 76px;
+  gap: 40px;
+
+}
 .header-nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -68,6 +118,9 @@ ul {
 }
 
 /* Address info styles */
+.address-info{
+  margin-left:auto;
+}
 .address-info a {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -85,6 +138,11 @@ ul {
   color: #404bbf;
   outline: none;
   font-style: normal;
+}
+.address-list{
+  display: flex;
+  gap: 40px;
+
 }
 
 /* Hero section styles */
