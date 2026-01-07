@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -151,6 +156,12 @@ header > .container {
   background-color: #2e2f42;
   color: #fff;
   text-align: center;
+  background-image:
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .hero-main-text {
   text-align: center;
@@ -272,6 +283,33 @@ header > .container {
 .team-card {
   background-color: #fff;
 }
+.team-card-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-card-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4fd;
+}
+.team-card-social-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+.team-card-social-link {
+}
+.team-card-social-link:hover,
+.team-card-social-link:focus {
+  background-color: #31d0aa;
+}
 
 /* Our Portfolio section */
 .portfolio-section {
@@ -321,6 +359,12 @@ header > .container {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.portfolio-card:hover {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 
 /* Footer styles */
 .footer {
@@ -360,4 +404,45 @@ header > .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+}
+.footer-logo-content {
+  flex-shrink: 0;
+}
+.footer-social-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4fd;
+  overflow: hidden;
+}
+.footer-social-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
 }
