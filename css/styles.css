@@ -229,7 +229,22 @@ header > .container {
   color: #434455;
   font-weight: 400;
 }
-
+.features-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.features-icon-svg {
+  width: 64px;
+  height: 64px;
+  color: currentColor;
+}
 /* Our Team section */
 .team-section {
   background-color: #f4f4fd;
@@ -300,7 +315,7 @@ header > .container {
   color: #f4f4fd;
 }
 .team-card-social-icon {
-  fill: currentColor;
+  fill: #f4f4fd;
   width: 16px;
   height: 16px;
 }
@@ -438,7 +453,7 @@ header > .container {
   overflow: hidden;
 }
 .footer-social-icon {
-  fill: currentColor;
+  fill: #f4f4fd;
   width: 24px;
   height: 24px;
 }
