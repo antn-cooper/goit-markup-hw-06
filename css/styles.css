@@ -524,6 +524,84 @@ header > .container {
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-subscribe-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 16px;
+}
+.footer-subscribe-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.footer-subscribe-input:focus {
+  outline: none;
+  border: 1px solid #31d0aa;
+}
+.footer-subscribe-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.footer-subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 16px;
+}
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #31d0aa;
+}
+.footer-subscribe-icon {
+  fill: #fff;
+}
+
+.footer-subscribe-form {
+  /* margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+}
 
 /* Modal styles */
 .overlay {
