@@ -485,7 +485,10 @@ header > .container {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  gap: 0px;
+}
+.footer-container > div:nth-child(2) {
+  margin-left: 120px;
 }
 .footer-logo-content {
   flex-shrink: 0;
