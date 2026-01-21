@@ -301,12 +301,12 @@ header > .container {
   height: 64px;
   color: currentColor;
 }
-/* Our Team section */
+/* TEAM SECTION */
 .team-section {
   background-color: #f4f4fd;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .team-section-main-text {
   font-weight: 700;
@@ -319,15 +319,18 @@ header > .container {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 .team-card {
-  width: 264px;
+  width: 100%;
+  max-width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08); /*value is taken from the mockup*/
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-card-details {
   padding: 32px 16px;
@@ -905,6 +908,15 @@ header > .container {
   .features-list li {
     width: calc((100% - 24px) / 2);
   }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+  .team-list li {
+    width: calc((100% - 24px) / 2);
+  }
 }
 @media screen and (min-width: 1158px) {
   section {
@@ -937,5 +949,25 @@ header > .container {
   }
   .features-list p {
     font-weight: 400;
+  }
+  .features-list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0 0 8px 0;
+  }
+  .team-section {
+    background-color: #f4f4fd;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 }
