@@ -498,19 +498,23 @@ header > .container {
   background-color: #2e2f42;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer a {
   text-decoration: none;
 }
 .footer-business-paragraph {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   text-align: left;
-  max-width: 264px;
+  /* max-width: 264px; */
+  width: 288px;
   margin-top: 16px;
 }
 .web-logo-footer {
@@ -537,21 +541,31 @@ header > .container {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0px;
+  /* gap: 0px; */
+  /* gap: 72px; */
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.footer-logo-content,
-.footer-subscribe {
-  margin: 0;
-}
+/* .footer-logo-content {
+  margin: 0 auto;
+} */
 .footer-social-list {
+  display: flex;
   justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  /* align-items: center; */
+}
+.footer-social-group {
+  padding: 72px 16px;
 }
 .footer-subscribe-form {
   flex-direction: column;
   align-items: center;
 }
 .footer-container > div:nth-child(2) {
-  margin-left: 120px;
+  margin-left: 0;
+  /* margin-left: 120px; */
 }
 .footer-logo-content {
   flex-shrink: 0;
@@ -563,12 +577,12 @@ header > .container {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.footer-social-list {
+/* .footer-social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
   margin-top: 16px;
-}
+} */
 .footer-social-link {
   width: 40px;
   height: 40px;
@@ -595,12 +609,13 @@ header > .container {
 }
 .footer-subscribe-form {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 .footer-subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
+  /* width: 264px; */
   height: 40px;
   padding-left: 16px;
   background-color: transparent;
@@ -609,7 +624,7 @@ header > .container {
   letter-spacing: 0.04em;
   color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-top: 16px;
+  /* margin-top: 16px; */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subscribe-input::placeholder {
@@ -631,6 +646,7 @@ header > .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 .footer-subscribe-button {
   display: flex;
@@ -662,7 +678,7 @@ header > .container {
   fill: #fff;
 }
 
-/* Modal styles */
+/* MODAL*/
 .overlay {
   position: fixed;
   top: 0;
