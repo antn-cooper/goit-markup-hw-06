@@ -1095,7 +1095,7 @@ header > .container {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -1103,6 +1103,28 @@ header > .container {
   gap: 8px;
   cursor: pointer;
 }
+/* .modal-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.modal-checkbox-custom {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.modal-checkbox-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  flex: 1; 
+} */
+
 .modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-custom {
   background-color: #404bbf;
   border-color: #404bbf;
@@ -1113,6 +1135,7 @@ header > .container {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   line-height: 1.33;
+  display: inline-block;
 }
 
 /* TABLET */
@@ -1234,15 +1257,10 @@ header > .container {
     min-height: 584px;
     padding: 72px 24px 24px;
   }
-  /* .footer-container > div:nth-child(2) {
-    margin-left: 120px;
-  } */
-  /* .modal {
-    width: 408px;
-    height: auto;
-    min-height: 584px;
-    padding: 72px 24px 24px;
-  } */
+  .modal-checkbox-label {
+    display: flex;
+    line-height: 1.33;
+  }
 }
 
 /* DESKTOP */
