@@ -17,64 +17,64 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="mobile-menu">
+      <!-- is-open -->
+      <button class="mobile-menu-close-button" type="button" aria-label="Open menu">
+        <svg class="mobile-menu-close-icon" width="24" height="24" aria-hidden="true">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-list">
+          <li><a href="./index.html" class="mobile-menu-nav-link current-page">Studio</a></li>
+          <li><a href="./index.html" class="mobile-menu-nav-link">Portfolio</a></li>
+          <li><a href="./index.html" class="mobile-menu-nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-address-info">
+        <ul class="mobile-menu-address-list">
+          <li class="mobile-menu-address-list current-page">
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu-social-list">
+          <li class="mobile-menu-social-item">
+            <a href="#" class="mobile-menu-social-link">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a href="#" class="mobile-menu-social-link">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a href="#" class="mobile-menu-social-link">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a href="#" class="mobile-menu-social-link">
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
     <header>
       <div class="container">
         <a href="./index.html" class="logo"
           ><span class="web-logo-header">WEB</span><span class="studio-logo-header">STUDIO</span></a
         >
-        <div class="mobile-menu">
-          <!-- is-open -->
-          <button class="mobile-menu-close-button" type="button" aria-label="Open menu">
-            <svg class="mobile-menu-close-icon" width="24" height="24" aria-hidden="true">
-              <use href="./images/icons.svg#close-icon"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu-nav">
-            <ul class="mobile-menu-nav-list">
-              <li><a href="./index.html" class="mobile-menu-nav-link current-page">Studio</a></li>
-              <li><a href="./index.html" class="mobile-menu-nav-link">Portfolio</a></li>
-              <li><a href="./index.html" class="mobile-menu-nav-link">Contacts</a></li>
-            </ul>
-          </nav>
-          <address class="mobile-menu-address-info">
-            <ul class="mobile-menu-address-list">
-              <li class="mobile-menu-address-list current-page">
-                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-              </li>
-              <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-            <ul class="mobile-menu-social-list">
-              <li class="mobile-menu-social-item">
-                <a href="#" class="mobile-menu-social-link">
-                  <svg class="mobile-menu-social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu-social-item">
-                <a href="#" class="mobile-menu-social-link">
-                  <svg class="mobile-menu-social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu-social-item">
-                <a href="#" class="mobile-menu-social-link">
-                  <svg class="mobile-menu-social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu-social-item">
-                <a href="#" class="mobile-menu-social-link">
-                  <svg class="mobile-menu-social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
         <div>
           <button class="menu-toggle" type="button" aria-label="Open menu">
             <svg class="menu-icon" width="24" height="24" aria-hidden="true">
@@ -655,7 +655,8 @@
       </div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay is-open">
+      <!-- is-open class added to show the overlay -->
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-close-icon" width="8" height="8">
