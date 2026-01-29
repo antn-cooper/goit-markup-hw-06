@@ -123,7 +123,7 @@ section {
   top: 24px;
   right: 24px;
   cursor: pointer;
-  border: 2px solid #1111;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   display: flex;
   align-items: center;
@@ -243,7 +243,7 @@ section {
   font-style: normal;
 }
 li.mobile-menu-address-list.current-page a {
-  color: #404bbf;
+  color: #4d5ae5;
 }
 .mobile-menu-address-list {
   display: flex;
@@ -282,6 +282,7 @@ li.mobile-menu-address-list.current-page a {
 /* NAVBAR */
 .header-nav {
   display: none;
+  /* margin-left: 76px; */
 }
 header {
   background-color: #fff;
@@ -299,7 +300,7 @@ header > .container {
 }
 .header-nav-list {
   display: flex;
-  margin-left: 76px;
+  /* margin-left: 76px; */
   gap: 40px;
 }
 .header-nav-link {
@@ -850,6 +851,7 @@ header > .container {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 16px;
+  border: none;
 }
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
@@ -909,7 +911,7 @@ header > .container {
   top: 24px;
   right: 24px;
   cursor: pointer;
-  border: 2px solid #1111;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   display: flex;
   align-items: center;
@@ -1113,7 +1115,7 @@ header > .container {
   .container {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     height: auto;
   }
   .menu-toggle {
@@ -1137,7 +1139,7 @@ header > .container {
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-  .header-nav-list {
+  .header-nav {
     margin-left: 120px;
   }
 
@@ -1171,6 +1173,9 @@ header > .container {
   .features-list li {
     width: calc((100% - 24px) / 2);
   }
+  .features-list h3 {
+    text-align: left;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1197,7 +1202,7 @@ header > .container {
     justify-content: flex-start;
     margin-left: 0;
     margin-right: 0;
-    margin-left: 108px;
+    padding-left: 108px;
   }
   .footer-logo-content {
     margin-bottom: 72px;
@@ -1269,6 +1274,9 @@ header > .container {
   .address-info {
     display: block;
   }
+  .header-nav {
+    margin-left: 76px;
+  }
   .address-list {
     flex-direction: row;
     gap: 40px;
@@ -1327,6 +1335,7 @@ header > .container {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin: 0 0 8px 0;
+    text-align: left;
   }
   .team-section {
     background-color: #f4f4fd;
@@ -1357,15 +1366,15 @@ header > .container {
     flex-wrap: nowrap;
     align-items: baseline;
     gap: 0px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: 0;
   }
   .footer-logo-content {
-    margin: 0 0 0 141px;
+    margin: 0 120px 0 0;
   }
   .footer-social-group {
-    margin: 0 80px 0 120px;
+    margin: 0 80px 0 0;
   }
   .footer-subscribe {
     margin: 0;
