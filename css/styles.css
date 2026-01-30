@@ -1135,6 +1135,7 @@ header > .container {
   }
   header > .container {
     justify-content: flex-start;
+    padding: 0 16px;
   }
   .address-list {
     flex-direction: column;
@@ -1208,8 +1209,8 @@ header > .container {
     align-items: baseline;
     text-align: left;
     justify-content: flex-start;
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
     padding-left: 108px;
   }
   .footer-logo-content {
@@ -1379,8 +1380,8 @@ header > .container {
     gap: 0px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 0;
-    margin: 0 auto;
+    /* margin-left: 0;
+    margin: 0 auto; */
   }
   .footer-logo-content {
     margin: 0 120px 0 0;
